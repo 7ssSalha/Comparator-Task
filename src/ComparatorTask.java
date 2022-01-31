@@ -14,7 +14,7 @@ class Item{
     @Override
     public boolean equals(Object obj) {
         Item item = (Item) obj;
-        return this.number == item.number && this.dup == item.dup ? true : false;
+        return this.number == item.number && this.dup == item.dup;
     }
 }
 
@@ -44,8 +44,8 @@ public class ComparatorTask {
 
     public static void main(String [] args){
 //        int [] arr = {2, 3, 2, 4, 5, 12, 2, 3, 3, 3, 12};
-        int arr[] = {4, 4, 2, 2, 2, 2, 3, 3, 1, 1, 6, 7, 5};
-        ArrayList <Item> Items = new ArrayList<Item>();
+        int [] arr = {4, 4, 2, 2, 2, 2, 3, 3, 1, 1, 6, 7, 5};
+        ArrayList <Item> Items = new ArrayList<>();
 
         for (int i = 0; i < arr.length; i++) {
             int count = 0;
